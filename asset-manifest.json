@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.78adfd85.css",
+    "main.js": "/my-portfolio/static/js/main.079b5789.js",
+    "static/media/dj.png": "/my-portfolio/static/media/dj.9fc9c772a906647bef56.png",
+    "static/media/port.png": "/my-portfolio/static/media/port.71b160c8ccdc3aab62ba.png",
+    "static/media/app.webp": "/my-portfolio/static/media/app.6c4bde2441f1efdcdc82.webp",
+    "static/media/temperature sensor.webp": "/my-portfolio/static/media/temperature sensor.c88943c6c65f2fa4f4fa.webp",
+    "static/media/me.jpg": "/my-portfolio/static/media/me.a404019b79882a8bf30c.jpg",
+    "static/media/leadership (1).png": "/my-portfolio/static/media/leadership (1).4199a1ea87d69ebf353f.png",
+    "static/media/motherboard.png": "/my-portfolio/static/media/motherboard.46d7f3e2f6ae2746c94c.png",
+    "static/media/bus.png": "/my-portfolio/static/media/bus.0fe7d9c7ebe8d417c3c7.png",
+    "static/media/code.png": "/my-portfolio/static/media/code.17bca5f017fd2a0a6a7c.png",
+    "static/media/designer.png": "/my-portfolio/static/media/designer.1f9bfe89fe9becc2219a.png",
+    "static/media/face.jpg": "/my-portfolio/static/media/face.a61055d434f38ab6a299.jpg",
+    "index.html": "/my-portfolio/index.html",
+    "main.78adfd85.css.map": "/my-portfolio/static/css/main.78adfd85.css.map",
+    "main.079b5789.js.map": "/my-portfolio/static/js/main.079b5789.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78adfd85.css",
+    "static/js/main.079b5789.js"
+  ]
+}
