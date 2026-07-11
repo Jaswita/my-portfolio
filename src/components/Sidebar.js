@@ -22,7 +22,7 @@ const Sidebar = () => {
 
         <div className="info-content">
           <h1 className="name" title="Manduva Jaswita">Manduva Jaswita</h1>
-          <p className="title">Web Developer & Embedded Systems Enthusiast</p>
+          <p className="title">Full-Stack Developer & ML Enthusiast</p>
         </div>
 
         <button className="info_more-btn" onClick={toggleSidebar}>

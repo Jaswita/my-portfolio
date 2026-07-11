@@ -1,13 +1,61 @@
 import React from 'react';
+/*import {
+  IoGitBranchOutline,
+  IoPulseOutline,
+  IoSchoolOutline,
+  IoHandLeftOutline,
+  IoPhonePortraitOutline
+} from 'react-icons/io5';*/
+
+
 import designerImg from '../assets/images/designer.png';
+import splitterImg from '../assets/images/splitter.png';
 import codeImg from '../assets/images/code.png';
+import expenseImg from '../assets/images/expense.png';
 import boardImg from '../assets/images/motherboard.png';
+import symImg from '../assets/images/symtom.png';
+import machineImg from '../assets/images/machine-learning.png';
+import applImg from '../assets/images/application.png';
 import leaderImg from '../assets/images/leadership (1).png';
-import thermoImg from '../assets/images/temperature sensor.webp';
-import busImg from '../assets/images/bus.png';
-import faceImg from '../assets/images/face.jpg';
-import djImg from '../assets/images/dj.png';
-import portImg from '../assets/images/port.png';
+import adaptiveImg from '../assets/images/Adaptive.jpg';
+import gestureImg from '../assets/images/gesture.jpg';
+import appImg from '../assets/images/app.webp';
+import { onCardMouseMove, onCardMouseLeave } from '../utils/spotlightFx';
+
+// Highlight reel — kept in sync with the Projects page. Icon avatars are
+// placeholders until real screenshots are added.
+const highlightProjects = [
+  {
+    img: splitterImg,
+    title: 'Splitter',
+    desc: 'Federated social platform in Go + Next.js with decentralized (DID) auth and E2E encrypted messaging.',
+  },
+  {
+    img: appImg,
+    title: 'Zynk',
+    desc: 'Full-stack MERN social app with real-time newsfeed, likes and secure authentication.',
+  },
+  {
+    img: adaptiveImg,
+    title: 'Adaptive Learning Platform',
+    desc: 'Python DSA project — Trie search, DAG-based prerequisites, min-heap scheduling and a recommendation engine.',
+  },
+  {
+    img: symImg,
+    title: 'AI Symptom Analyser',
+    desc: 'React + Firebase health companion with AI-backed symptom insights and a moderated support circle.',
+  },
+  {
+    img: expenseImg,
+    title: 'SmartRupee',
+    desc: 'Cross-platform Flutter & Dart mobile app for everyday money management.',
+  },
+  {
+    img: gestureImg,
+    title: 'Gesture Control for Presentations',
+    desc: '4-person team build — STM32 + MPU6050 gyro system for controlling slides with hand tilts.',
+  }
+];
 
 const About = () => {
   return (
@@ -18,46 +66,71 @@ const About = () => {
 
       <section className="about-text">
         <p>
-          I'm Manduva Jaswita, a 3rd year Computer Science student from Amrita Vishwa Vidyapeetham, Coimbatore.
-          I enjoy building responsive web interfaces, working on embedded systems, and exploring real-world problems using AI/ML.
+          I'm Manduva Jaswita, a B.Tech Computer Science and Engineering student building
+          full-stack products end to end — from Go and PostgreSQL backends to React
+          frontends, with machine learning, embedded systems, and Flutter mobile apps
+          along the way. I like taking a problem apart, picking the right data structure
+          or architecture for it, and shipping something that actually works.
         </p>
         <p>
-          Along with academic excellence (Grade 12 with distinction), I am an active basketball player and team leader.
-          I love blending technology and creativity—whether it's coding a solution, designing a UI, or leading a team to success.
+          My recent work spans a federated social platform built on Go and ActivityPub,
+          ML models for healthcare and currency detection, a Flutter money-management app,
+          and embedded gesture-control systems on STM32 — alongside a strong foundation in
+          DSA, OOP, OS, DBMS, and computer networks. I'm currently looking for software
+          engineering, full-stack, or backend development internships where I can keep
+          building things that solve real problems.
         </p>
       </section>
 
       <section className="service">
         <h3 className="h3 service-title">What I'm Doing</h3>
         <ul className="service-list">
-          <li className="service-item">
+          <li className="service-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
+            <div className="service-icon-box">
+              <img src={codeImg} alt="Full-stack development icon" width="40" />
+            </div>
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Full-Stack Development</h4>
+              <p className="service-item-text">Building end-to-end apps with the MERN stack, Go, and PostgreSQL — REST APIs, auth, and responsive UIs.</p>
+            </div>
+          </li>
+          <li className="service-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
+            <div className="service-icon-box">
+              <img src={machineImg} alt="machine learning icon" width="40" />
+            </div>
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Machine Learning</h4>
+              <p className="service-item-text">Applying ML and deep learning to real-world problems — from counterfeit detection to healthcare-focused tools.</p>
+            </div>
+          </li>
+          <li className="service-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
+            <div className="service-icon-box">
+              <img src={applImg} alt="mobile application img" width="40" />
+            </div>
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Mobile Development</h4>
+              <p className="service-item-text">Building cross-platform mobile apps with Flutter and Dart, from UI to state management.</p>
+            </div>
+          </li>
+          <li className="service-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
+            <div className="service-icon-box">
+              <img src={boardImg} alt="Embedded systems icon" width="40" />
+            </div>
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">Embedded Systems</h4>
+              <p className="service-item-text">Designing real-time embedded projects on Arduino and STM32, including sensor systems and gesture control.</p>
+            </div>
+          </li>
+          <li className="service-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
             <div className="service-icon-box">
               <img src={designerImg} alt="design icon" width="40" />
             </div>
             <div className="service-content-box">
               <h4 className="h4 service-item-title">UI/UX Design</h4>
-              <p className="service-item-text">Designing modern, accessible, and visually appealing UIs using Figma and Canva.</p>
+              <p className="service-item-text">Designing modern, accessible, and visually appealing interfaces using Figma and Canva.</p>
             </div>
           </li>
-          <li className="service-item">
-            <div className="service-icon-box">
-              <img src={codeImg} alt="Web development icon" width="40" />
-            </div>
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Web Development</h4>
-              <p className="service-item-text">Frontend development using HTML, CSS, JS with responsive designs and interactivity.</p>
-            </div>
-          </li>
-          <li className="service-item">
-            <div className="service-icon-box">
-              <img src={boardImg} alt="App development icon" width="40" />
-            </div>
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Embedded Projects</h4>
-              <p className="service-item-text">Creating real-time embedded systems using Arduino (e.g. digital thermometers).</p>
-            </div>
-          </li>
-          <li className="service-item">
+          <li className="service-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
             <div className="service-icon-box">
               <img src={leaderImg} alt="Leadership icon" width="40" />
             </div>
@@ -72,47 +145,24 @@ const About = () => {
       <section className="testimonials">
         <h3 className="h3 testimonials-title">My Projects</h3>
         <ul className="testimonials-list has-scrollbar">
-  {[
-    {
-      img: thermoImg,
-      title: 'Smart Thermometer',
-      desc: 'Arduino + TMP36 based digital thermometer with buzzer and unit toggle.',
-    },
-    {
-      img: busImg,
-      title: 'Bus Booking System',
-      desc: 'Python multithreaded app for concurrent bus ticket bookings with sync.',
-    },
-    {
-      img: faceImg,
-      title: 'Facial Expression Detection',
-      desc: 'OpenCV-based emotion detection system for user interaction analysis.',
-    },
-    {
-      img: djImg,
-      title: 'DJ Platform',
-      desc: 'Music mixing web app with animations using HTML5, CSS3, JavaScript.',
-    },
-    {
-      img: portImg,
-      title: 'Portfolio Website',
-      desc: 'A scroll-reveal animated portfolio site showcasing my developer profile.',
-    }
-  ].map(({ img, title, desc }) => (
-    <li className="testimonials-item" key={title}>
-      <div className="content-card">
-        <figure className="testimonials-avatar-box">
-          <img src={img} alt={title} width="60" />
-        </figure>
-        <h4 className="h4 testimonials-item-title">{title}</h4>
-        <div className="testimonials-text">
-          <p>{desc}</p>
-        </div>
-      </div>
-    </li>
-  ))}
-</ul>
-
+          {highlightProjects.map(({ img, icon, title, desc }) => (
+            <li className="testimonials-item" key={title}>
+              <div className="content-card spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
+                <figure className={`testimonials-avatar-box ${!img ? 'testimonials-avatar-box--icon' : ''}`}>
+                  {img ? (
+                    <img src={img} alt={title} width="60" />
+                  ) : (
+                    <span className="testimonials-avatar-icon">{icon}</span>
+                  )}
+                </figure>
+                <h4 className="h4 testimonials-item-title">{title}</h4>
+                <div className="testimonials-text">
+                  <p>{desc}</p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </section>
     </article>
   );

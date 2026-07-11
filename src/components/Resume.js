@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoBookOutline, IoMedalOutline } from 'react-icons/io5';
+import { onCardMouseMove, onCardMouseLeave } from '../utils/spotlightFx';
 
 const Resume = () => {
   return (
@@ -18,15 +19,15 @@ const Resume = () => {
         </div>
 
         <ol className="timeline-list">
-          <li className="timeline-item">
+          <li className="timeline-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
             <h4 className="h4 timeline-item-title">B.Tech in Computer Science and Engineering</h4>
             <span>2023 — 2027 (Ongoing)</span>
             <p className="timeline-text">
               Amrita School of Engineering, Coimbatore<br />
-              CGPA: 8.31 (2nd Year)
+              CGPA: 8.35 (4th Year)
             </p>
           </li>
-          <li className="timeline-item">
+          <li className="timeline-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
             <h4 className="h4 timeline-item-title">Higher Secondary (12th Grade)</h4>
             <span>Completed May 2023</span>
             <p className="timeline-text">
@@ -34,7 +35,7 @@ const Resume = () => {
               Score: 981/1000
             </p>
           </li>
-          <li className="timeline-item">
+          <li className="timeline-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
             <h4 className="h4 timeline-item-title">Secondary Education (10th Grade)</h4>
             <span>Completed August 2021</span>
             <p className="timeline-text">
@@ -48,12 +49,13 @@ const Resume = () => {
       {/* Skills Section */}
       <section className="skill">
         <h3 className="h3 skills-title">My Skills</h3>
-        <ul className="skills-list content-card">
+        <ul className="skills-list content-card spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
           {[
             ["Programming Languages", 90],
-            ["Web Technologies", 85],
-            ["Core CS Concepts", 80],
-            ["Tools & Software", 75],
+            ["Full-Stack & Backend", 88],
+            ["Machine Learning", 78],
+            ["Mobile Development (Flutter)", 75],
+            ["Core CS Concepts", 85],
             ["Soft & Personal Skills", 90]
           ].map(([title, value], index) => (
             <li className="skills-item" key={index}>
@@ -79,20 +81,20 @@ const Resume = () => {
         </div>
 
         <ol className="timeline-list">
-          <li className="timeline-item">
+          <li className="timeline-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
             <h4 className="h4 timeline-item-title">Basketball Captain</h4>
             <span>School & College</span>
             <p className="timeline-text">
               Represented South Zone; winner in multiple inter-school and inter-college tournaments. Awarded Best Sportsperson.
             </p>
           </li>
-          <li className="timeline-item">
+          <li className="timeline-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
             <h4 className="h4 timeline-item-title">Athletics</h4>
             <p className="timeline-text">
               Secured top ranks in 100m & 200m sprints at district-level athletic meets.
             </p>
           </li>
-          <li className="timeline-item">
+          <li className="timeline-item spotlight" onMouseMove={onCardMouseMove} onMouseLeave={onCardMouseLeave}>
             <h4 className="h4 timeline-item-title">Chess & Throwball</h4>
             <p className="timeline-text">
               Participated in several school and college-level competitions in both sports.
