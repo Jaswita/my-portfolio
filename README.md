@@ -2,7 +2,8 @@
 
 A personal developer portfolio built with React, showcasing projects, skills, and experience across full-stack development, backend systems, machine learning, and embedded systems.
 
-**Live site:** [my-portfolio.vercel.app](https://my-portfolio-jaswita-g3ostx03a-jaswitas-projects.vercel.app/) <!-- replace with your actual Vercel URL -->
+**Live site:** [my-portfolio.vercel.app](https://jaswita-portfolio.vercel.app/) <!-- replace with your actual Vercel URL -->
+**Live site one more** [my-portfolio.vercel.app](https://my-portfolio-jaswita-g3ostx03a-jaswitas-projects.vercel.app/) 
 **Repo:** [github.com/Jaswita/my-portfolio](https://github.com/Jaswita/my-portfolio)
 
 ---
